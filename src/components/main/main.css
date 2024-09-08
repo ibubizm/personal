@@ -1,0 +1,154 @@
+.main {
+  height: 100vh;
+  background-image: url('./bg.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  padding: 30px;
+  font-size: 75px;
+  font-family: 'New Amsterdam', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main__title {
+  font-size: 60px;
+  padding: 0;
+  /* grid-area: a; */
+}
+
+.main__content {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  /* grid-template-areas:
+    'a . .'
+    'b c c'
+    'b c c'; */
+}
+
+.photo {
+  border-radius: 50%;
+  border: 5px solid black;
+  animation: me 3s ease-in-out;
+  /* grid-area: b; */
+  width: 300px;
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.description {
+  /* display: flex; */
+  padding: 30px;
+  width: 100%;
+  align-items: center;
+  /* grid-area: c; */
+  font-size: 25px;
+  align-items: center;
+
+  font-family: 'New Amsterdam', sans-serif;
+  overflow: hidden;
+  /* border-right: 0.15em solid orange; */
+  white-space: wrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  /* animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* @keyframes me {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 0px;
+  }
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+.description__row {
+  /* font-family: monospace; */
+  font-size: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: typing;
+  animation-duration: 1s;
+  animation-timing-function: steps(200, end);
+  animation-iteration-count: 1;
+}
+
+.first {
+  animation-delay: 0s;
+}
+
+.second {
+  visibility: hidden;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.third {
+  visibility: hidden;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 75px;
+    padding: 0;
+  }
+
+  .main__title {
+    font-size: 60px;
+  }
+  .main__content {
+    display: grid;
+    align-items: normal;
+    /* grid-template-areas:
+      'a a a'
+      '. b .'
+      'c c c'; */
+    /* grid-template-rows: auto auto 1fr; */
+    gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+  }
+
+  .photo {
+    margin-top: 30px;
+  }
+  .description {
+    /* display: grid;
+    justify-content: center; */
+    text-align: center;
+    padding: 10px;
+  }
+  .description__row {
+    letter-spacing: normal;
+    /* font-size: 28px; */
+    font-size: 20px;
+  }
+}
