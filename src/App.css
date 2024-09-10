@@ -1,10 +1,10 @@
 .container {
-  height: 100vh;
+  height: 100svh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .page {
-  height: 100vh;
+  height: 100svh;
   scroll-snap-align: start;
 }

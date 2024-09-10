@@ -1,7 +1,23 @@
+import { useEffect } from 'react'
 import './about.css'
 import gus from './gus.gif'
 
 export const About = ({ aboutRef }) => {
+  const about__list__item = document.getElementsByClassName('about__list__item')
+
+  const faidIn = (item, delay) => {
+    setTimeout(() => {
+      item.classList.add('show')
+    }, delay)
+  }
+
+  useEffect(() => {
+    for (let index = 0; index < about__list__item.length; index++) {
+      faidIn(about__list__item[index], index * 1000)
+      console.log(index)
+    }
+  }, [])
+
   return (
     <div ref={aboutRef} className="about">
       <h1 className="title">Experience</h1>

@@ -1,18 +1,3 @@
-@keyframes FadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.1);
-  }
-
-  85% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .about {
   font-family: 'New Amsterdam', sans-serif;
   height: 100svh;
@@ -40,28 +25,71 @@ p {
   /* font-size: 23px; */
   font-size: 4vmin;
   list-style: square;
-  animation: FadeIn 1s linear;
-  animation-fill-mode: both;
+  /* animation: FadeIn 1s linear; */
+  /* animation-fill-mode: both; */
+  /* opacity: 0; */
 }
 
-.about__list__item:nth-child(1) {
+.about__list__item {
+  opacity: 0;
+}
+
+.about__list .about__list__item:nth-child(1) {
   animation-delay: 0.5s;
 }
-.about__list__item:nth-child(2) {
+.about__list .about__list__item:nth-child(2) {
   animation-delay: 1s;
 }
-.about__list__item:nth-child(3) {
+.about__list .about__list__item:nth-child(3) {
   animation-delay: 1.5s;
 }
-.about__list__item:nth-child(4) {
+.about__list .about__list__item:nth-child(4) {
   animation-delay: 2s;
 }
 .about__list__item {
+  transition: 0.2s all ease-in-out;
   /* animation: FadeIn 1s ease-in-out; */
   margin-bottom: 20px;
 }
 
+.show {
+  animation: FadeIn 1s linear;
+  animation-fill-mode: both;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  85% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 450px) {
+  .about__content {
+    grid-template-columns: none;
+    padding: 0;
+  }
+
+  .about__list {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 400px) {
+  .photo {
+    width: 250px;
+  }
+
+  .gus {
+    height: 300px;
+  }
   .about__content {
     grid-template-columns: none;
     padding: 0;
