@@ -7,7 +7,9 @@ export const Slider = () => {
   const children = cloneElement(
     <div className="slide">
       {list.map((m) => (
-        <Cart img={m.img}>{m.description}</Cart>
+        <Cart link={m.link} img={m.img}>
+          {m.description} key={}
+        </Cart>
       ))}
     </div>
   )

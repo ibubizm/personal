@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import './about.css'
 import gus from './gus.gif'
+import useOnScreen from '../../hooks/useViewport'
 
 export const About = ({ aboutRef }) => {
   const about__list__item = document.getElementsByClassName('about__list__item')
@@ -14,9 +15,10 @@ export const About = ({ aboutRef }) => {
   useEffect(() => {
     for (let index = 0; index < about__list__item.length; index++) {
       faidIn(about__list__item[index], index * 1000)
-      console.log(index)
     }
   }, [])
+
+  const isVisible = useOnScreen(aboutRef)
 
   return (
     <div ref={aboutRef} className="about">
@@ -24,7 +26,7 @@ export const About = ({ aboutRef }) => {
 
       <div className="about__content">
         <img className="gus" src={gus} alt="" />
-        <ul className="about__list">
+        <ul className={isVisible ? 'about__list vis' : 'about__list'}>
           <li className="about__list__item">
             I developed and maintained both frontend and backend components of
             mobile applications, including creating user interfaces and

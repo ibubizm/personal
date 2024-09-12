@@ -16,12 +16,11 @@ export const Main = () => {
             Hi, I’m a frontend developer from Belarus.
           </p>
           <p className="description__row second">
-            I work with
-            {/* I recently moved to Israel to start */}
+            I work with :{/* I recently moved to Israel to start */}
           </p>
           <p className="description__row third">
             {/* a new chapter in my life. */}
-            JS, React, Node JS, Figma, MongoDB, TS, Postgresql, Redux ...
+            JS, React, Node JS, Figma, MongoDB, TS, Postgresql, Redux
           </p>
           <Button>
             <a
