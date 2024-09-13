@@ -12,5 +12,5 @@
 }
 
 .button:hover {
-  /* background-color: red; */
+  transform: scale(0.9);
 }

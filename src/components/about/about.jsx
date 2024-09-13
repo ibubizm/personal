@@ -12,13 +12,15 @@ export const About = ({ aboutRef }) => {
     }, delay)
   }
 
-  useEffect(() => {
-    for (let index = 0; index < about__list__item.length; index++) {
-      faidIn(about__list__item[index], index * 1000)
-    }
-  }, [])
-
   const isVisible = useOnScreen(aboutRef)
+
+  useEffect(() => {
+    if (isVisible) {
+      for (let index = 0; index < about__list__item.length; index++) {
+        faidIn(about__list__item[index], index * 500)
+      }
+    }
+  }, [isVisible])
 
   return (
     <div ref={aboutRef} className="about">
@@ -26,7 +28,7 @@ export const About = ({ aboutRef }) => {
 
       <div className="about__content">
         <img className="gus" src={gus} alt="" />
-        <ul className={isVisible ? 'about__list vis' : 'about__list'}>
+        <ul className={'about__list'}>
           <li className="about__list__item">
             I developed and maintained both frontend and backend components of
             mobile applications, including creating user interfaces and

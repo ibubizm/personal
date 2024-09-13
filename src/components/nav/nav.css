@@ -19,7 +19,12 @@
 }
 
 li {
+  transition: all ease 0.3s;
   cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
 }
 
 .socialmedia {

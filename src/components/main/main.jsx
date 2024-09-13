@@ -11,7 +11,7 @@ export const Main = () => {
 
         <div className="description">
           {/* <div className="sub__title">Web developer</div> */}
-          <h1 className="title main__title">Hleb Tkachuk</h1>
+          <h1 className="title main__title">Gleb Tkachuk</h1>
           <p className="description__row first">
             Hi, I’m a frontend developer from Belarus.
           </p>

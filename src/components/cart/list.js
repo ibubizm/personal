@@ -2,6 +2,9 @@ import pizza from './pizza.png'
 import chat from './chat.png'
 import git from './git.png'
 import table from './table.png'
+import posts from './posts.png'
+import verstka from './verstka.png'
+import v2 from './v2.png'
 
 export const list = [
   {
@@ -22,10 +25,26 @@ export const list = [
     description: 'Application for searching repositories on GitHub',
   },
   {
-    img: table,
-    link: 'https://wonderful-puffpuff-bf751d.netlify.app/',
+    img: verstka,
+    // link: 'https://wonderful-puffpuff-bf751d.netlify.app/',
+    description: 'I coded the layout based on the design.',
+  },
+  // {
+  //   img: table,
+  //   link: 'https://wonderful-puffpuff-bf751d.netlify.app/',
+  //   description:
+  //     'Application for filtering tables and sorting information by categories',
+  // },
+  {
+    img: posts,
+    // link: 'https://wonderful-puffpuff-bf751d.netlify.app/',
     description:
-      'Application for filtering tables and sorting information by categories',
+      'The application for creating, editing, and managing posts allows users to create text entries, add tags to them, and edit existing posts. Key features include: Ability to edit the content of a post, including modifying text, adding or removing tags.',
+  },
+  {
+    img: v2,
+    // link: 'https://wonderful-puffpuff-bf751d.netlify.app/',
+    description: 'I coded the layout based on the design.',
   },
   // {
   //   img: '',
