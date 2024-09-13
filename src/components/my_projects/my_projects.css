@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 450px) {
+  .projects {
+    overflow: auto;
+  }
   .projects__list {
     grid-template-columns: none;
   }
