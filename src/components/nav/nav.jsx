@@ -1,7 +1,7 @@
 import './nav.css'
-import tg from './telegram.png'
-import whatsapp from './social.png'
-import linkedIn from './linkedin.png'
+import tg from './tg3.png'
+import whatsapp from './wa.png'
+import linkedIn from './link.png'
 
 export const Nav = ({ projectRef, aboutRef }) => {
   return (

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import './about.css'
-import gus from './gus.gif'
+import gus from './image.png'
 import useOnScreen from '../../hooks/useViewport'
 
 export const About = ({ aboutRef }) => {
@@ -27,7 +27,6 @@ export const About = ({ aboutRef }) => {
       <h1 className="title">Experience</h1>
 
       <div className="about__content">
-        <img className="gus" src={gus} alt="" />
         <ul className={'about__list'}>
           <li className="about__list__item">
             I developed and maintained both frontend and backend components of
@@ -52,6 +51,7 @@ export const About = ({ aboutRef }) => {
             Also sent memes to colleagues during difficult periods in life
           </li> */}
         </ul>
+        <img className="gus" src={gus} alt="" />
       </div>
     </div>
   )

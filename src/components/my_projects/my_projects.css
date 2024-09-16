@@ -1,17 +1,24 @@
+.projects__page {
+  overflow: auto;
+}
+
 .projects {
-  padding: 30px;
-  height: 100%;
+  overflow: auto;
+  height: 100vh;
+  margin-bottom: 8.25rem;
+  /* padding: 30px;
+  height: 100%; */
   /* display: flex;
   flex-direction: column;
   grid-template-rows: auto 1fr; */
   /* height: 100vh; */
-  background: linear-gradient(454deg, #4f4080, #9653ff);
+  /* background: linear-gradient(454deg, #4f4080, #9653ff); */
 }
 
 .projects__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .corusel {

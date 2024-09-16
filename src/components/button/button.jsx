@@ -1,8 +1,8 @@
 import './button.css'
 
-export const Button = ({ children, func, ...props }) => {
+export const Button = ({ children, className, func, ...props }) => {
   return (
-    <button className="button" onClick={func} {...props}>
+    <button className={`button ${className}`} onClick={func} {...props}>
       {children}
     </button>
   )

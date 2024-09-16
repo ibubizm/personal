@@ -1,23 +1,56 @@
 .main {
-  height: 100vh;
+  position: relative;
+  /* height: 100vh;
   background-image: url('./bg.avif');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
-.title {
+.main::after {
+  position: absolute;
+  content: '';
+  width: 516px;
+  height: 503px;
+  top: 428px;
+  left: 1032px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(217, 217, 217, 0.5) 0%,
+    rgba(115, 115, 115, 0) 100%
+  );
+  overflow: hidden;
+}
+
+/* .title {
   padding: 30px;
   font-size: 75px;
   font-family: 'New Amsterdam', sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 5.3rem;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
 .main__title {
-  font-size: 60px;
-  padding: 0;
+  /* font-size: 60px;
+  padding: 0; */
   /* grid-area: a; */
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 8rem;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 4rem;
+  margin-top: 7rem;
 }
 
 .main__content {
@@ -33,31 +66,44 @@
 
 .photo {
   border-radius: 50%;
-  border: 5px solid black;
+  border: 5px solid #d0cfcf;
   animation: me 3s ease-in-out;
   /* grid-area: b; */
-  width: 300px;
-  max-height: 400px;
+  width: 18.75rem;
+  max-height: 25rem;
   width: auto;
   margin: 0 auto;
 }
 
 .description {
   /* display: flex; */
-  padding: 30px;
+  /* border-right: 0.15em solid orange; */
+  /* animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; */
+  /* grid-area: c; */
+
+  /* padding: 30px;
   width: 100%;
   align-items: center;
-  /* grid-area: c; */
   font-size: 25px;
   align-items: center;
 
   font-family: 'New Amsterdam', sans-serif;
   overflow: hidden;
-  /* border-right: 0.15em solid orange; */
   white-space: wrap;
   margin: 0 auto;
-  letter-spacing: 0.15em;
-  /* animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; */
+  letter-spacing: 0.15em; */
+
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  text-align: left;
+  color: #d0cfcf;
+  margin-bottom: 5.875rem;
+}
+
+p {
+  line-height: 3.6rem;
 }
 
 @keyframes typing {
@@ -91,7 +137,7 @@
 
 .description__row {
   /* font-family: monospace; */
-  font-size: 30px;
+  /* font-size: 30px; */
   overflow: hidden;
   white-space: nowrap;
   animation-name: typing;
@@ -111,13 +157,23 @@
 }
 .third {
   visibility: hidden;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fourth {
+  visibility: hidden;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.fifth {
+  visibility: hidden;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
 }
 
 @media (max-width: 450px) {
   .title {
-    font-size: 75px;
+    /* font-size: 75px; */
     padding: 0;
   }
 
@@ -132,7 +188,7 @@
       '. b .'
       'c c c'; */
     /* grid-template-rows: auto auto 1fr; */
-    gap: 20px;
+    /* gap: 20px; */
     grid-template-columns: auto;
     grid-template-rows: auto 1fr;
   }

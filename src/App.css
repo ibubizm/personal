@@ -1,10 +1,29 @@
+.App {
+  background-color: #161219;
+  color: #d0cfcf;
+}
 .container {
   height: 100svh;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  /* padding: 0 3rem; */
+
+  /* margin: 0 auto; */
+  /* max-width: 75rem; */
+  width: 100%;
 }
 
 .page {
+  padding: 0 3rem;
   height: 100svh;
   scroll-snap-align: start;
+}
+
+h1 {
+  font-size: clamp(
+    1.5rem,
+    2.5vw,
+    3rem
+  ); /* Шрифт будет изменяться от 1.5rem до 3rem в зависимости от ширины экрана */
 }

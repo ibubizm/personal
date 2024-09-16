@@ -1,0 +1,24 @@
+.input {
+  position: relative;
+  border: none;
+  background-color: #d0cfcf;
+  height: 4.5rem;
+  width: 23.75rem;
+  border-radius: 30px;
+  padding: 1.81rem 1.5rem;
+}
+
+.input::placeholder {
+  font-size: 1.125rem;
+}
+
+.tg__btn {
+  cursor: pointer;
+  position: absolute;
+  background: transparent;
+  right: 10px;
+}
+
+.tg__btn__img {
+  width: 3rem;
+}

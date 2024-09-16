@@ -2,9 +2,9 @@ import i from './i2.png'
 import './main.css'
 import { Button } from '../button/button'
 
-export const Main = () => {
+export const Main = ({ homeRef }) => {
   return (
-    <div className="main">
+    <div ref={homeRef} className="main">
       <div className="main__content">
         {/* <img src="" alt="" /> */}
         <img className="photo" src={i} alt="" />
@@ -12,17 +12,14 @@ export const Main = () => {
         <div className="description">
           {/* <div className="sub__title">Web developer</div> */}
           <h1 className="title main__title">Gleb Tkachuk</h1>
-          <p className="description__row first">
-            Hi, I’m a frontend developer from Belarus.
+          <p className="description__row first">Hi, I’m a frontend developer</p>
+          <p className="description__row second">from Belarus.</p>
+          <p className="description__row third">I work with :</p>
+          <p className="description__row fourth">JS, React, Node JS, Figma</p>
+          <p className="description__row fifth">
+            MongoDB, TS, Postgresql, Redux
           </p>
-          <p className="description__row second">
-            I work with :{/* I recently moved to Israel to start */}
-          </p>
-          <p className="description__row third">
-            {/* a new chapter in my life. */}
-            JS, React, Node JS, Figma, MongoDB, TS, Postgresql, Redux
-          </p>
-          <Button>
+          <Button className={'button__resume'}>
             <a
               href="./hleb_tkachuk_cv.pdf"
               type="application/octet-stream"
@@ -31,6 +28,7 @@ export const Main = () => {
               resume
             </a>
           </Button>
+          {/* <span className="elipce"></span> */}
         </div>
       </div>
     </div>
