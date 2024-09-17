@@ -29,13 +29,27 @@ a {
   color: inherit;
 }
 
+html {
+  font-size: 14px;
+}
+
 @media (max-width: 1440px) {
   html {
     font-size: 14px;
   }
 }
+@media (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 8px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 7px;
   }
 }

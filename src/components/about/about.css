@@ -111,10 +111,6 @@ p {
   }
 }
 @media (max-width: 400px) {
-  .photo {
-    width: 200px;
-  }
-
   .gus {
     height: 250px;
   }
@@ -125,5 +121,6 @@ p {
 
   .about__list {
     padding: 0 30px;
+    font-size: 3rem;
   }
 }
