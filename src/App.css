@@ -1,6 +1,7 @@
 .App {
   background-color: #161219;
   color: #d0cfcf;
+  font-family: 'Lato', sans-serif;
 }
 .container {
   height: 100svh;

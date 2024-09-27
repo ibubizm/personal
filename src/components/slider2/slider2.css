@@ -1,0 +1,9 @@
+.slides {
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+}
+
+.active {
+  position: absolute;
+}

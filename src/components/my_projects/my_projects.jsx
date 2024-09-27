@@ -1,4 +1,4 @@
-import { Slider } from '../slider/slider'
+import { Slider } from '../slider2/slider2'
 import './my_projects.css'
 import { list } from '../cart/list'
 import { Cart } from '../cart/cart'
@@ -14,9 +14,9 @@ export const MyProjects = ({ myref }) => {
           </Cart>
         ))}
       </div>
-      {/* <div className="corusel">
-        <Slider />
-      </div> */}
+      {/* <div className="corusel"> */}
+      {/* <Slider /> */}
+      {/* </div> */}
     </div>
   )
 }

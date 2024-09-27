@@ -62,10 +62,31 @@ li:hover {
 
 @media (max-width: 450px) {
   .socialmedia {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.85rem;
+    height: 2.85rem;
   }
   .title {
     text-align: center;
+  }
+
+  .footer__links {
+    display: none;
+  }
+
+  .footer::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 184px;
+    height: 189px;
+    top: 2858px;
+    left: 201px;
+    gap: 0px;
+    opacity: 0px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(217, 217, 217, 0.25) 0%,
+      rgba(115, 115, 115, 0) 100%
+    );
   }
 }

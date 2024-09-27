@@ -1,0 +1,96 @@
+.burger {
+  top: -100%;
+  padding: 6rem 0;
+  position: absolute;
+  display: none;
+  width: 100vw;
+  background-color: #d0cfcf;
+  left: 0;
+  transition: all ease 0.3s;
+  z-index: 100;
+}
+
+.burger::after {
+  content: '';
+  display: flex;
+  transform: rotate(180deg);
+  position: absolute;
+  width: 232.92px;
+  height: 241px;
+  bottom: 0;
+  left: -56px;
+  /* top: 548.78px;
+  left: 147.45px; */
+  gap: 0px;
+  opacity: 50%;
+
+  background: radial-gradient(
+      70.61% 70.56% at 73.03% 12.83%,
+      rgba(46, 28, 57, 0.8) 0%,
+      rgba(91, 16, 108, 0.4) 39.62%,
+      rgba(164, 90, 180, 0.2) 70.11%,
+      rgba(200, 127, 216, 0.1) 84.37%,
+      rgba(236, 165, 252, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.burger:before {
+  content: '';
+  display: flex;
+  position: absolute;
+  width: 209px;
+  height: 241px;
+  top: -65px;
+  right: 0;
+  gap: 0px;
+  opacity: 50%;
+  background: radial-gradient(
+      70.61% 70.56% at 73.03% 12.83%,
+      rgba(46, 28, 57, 0.8) 0%,
+      rgba(91, 16, 108, 0.4) 39.62%,
+      rgba(164, 90, 180, 0.2) 70.11%,
+      rgba(200, 127, 216, 0.1) 84.37%,
+      rgba(236, 165, 252, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.burger__icon {
+  display: none;
+  width: 4rem;
+}
+
+.burger__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+  height: auto;
+}
+
+.burger__menu {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  font-size: 2.85rem;
+  list-style: none;
+  color: #161219;
+  font-weight: 900;
+  align-items: center;
+}
+
+.active {
+  top: 0;
+}
+
+@media (max-width: 450px) {
+  .burger {
+    display: block;
+  }
+
+  .burger__icon {
+    display: block;
+  }
+}

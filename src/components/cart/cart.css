@@ -5,6 +5,10 @@
   /* margin-right: 30px; */
 }
 
+.active {
+  align-items: center;
+}
+
 .image {
   display: block;
   border-radius: 7px;

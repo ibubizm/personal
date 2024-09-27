@@ -2,11 +2,12 @@ import './nav.css'
 import tg from './tg3.png'
 import whatsapp from './wa.png'
 import linkedIn from './link.png'
+import burger from '../../images/burger.png'
 
-export const Nav = ({ projectRef, aboutRef }) => {
+export const Nav = ({ projectRef, aboutRef, active, toggleActive }) => {
   return (
     <nav className="navigation">
-      <ul>
+      <ul className="header_navigation">
         <li
           onClick={() =>
             aboutRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -47,6 +48,12 @@ export const Nav = ({ projectRef, aboutRef }) => {
           </a>
         </li>
       </ul>
+      <img
+        onClick={() => toggleActive(active)}
+        className="burger__icon"
+        src={burger}
+        alt=""
+      />
     </nav>
   )
 }
