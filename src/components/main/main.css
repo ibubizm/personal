@@ -209,13 +209,13 @@ p {
   }
 }
 
-@media screen and (max-width: 400px), screen and (max-height: 800px) {
+@media screen and (max-height: 800px), screen and (max-width: 400px) {
   .main__title {
     font-size: 7rem;
     margin: 0;
   }
 }
-@media screen and (max-width: 400px), screen and (max-height: 667px) {
+@media screen and (max-height: 667px), screen and (max-width: 400px) {
   .main__title {
     font-size: 5rem;
     margin: 0;

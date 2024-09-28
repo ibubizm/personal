@@ -23,7 +23,7 @@ export const BurgerMenu = ({
         >
           Experience
         </li>
-        <li className="burger__item">contacts</li>
+        {/* <li className="burger__item">contacts</li> */}
         <li
           onClick={() =>
             projectRef.current.scrollIntoView({ behavior: 'smooth' })

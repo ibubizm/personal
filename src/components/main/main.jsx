@@ -20,13 +20,12 @@ export const Main = ({ homeRef }) => {
           <Button className={'button__resume'}>
             <a
               href="./hleb_tkachuk_cv.pdf"
-              type="application/octet-stream"
-              download="./hleb_tkachuk_cv.pdf"
+              // type="application/octet-stream"
+              download="hleb_tkachuk_cv"
             >
               resume
             </a>
           </Button>
-          {/* <span className="elipce"></span> */}
         </div>
       </div>
     </div>
