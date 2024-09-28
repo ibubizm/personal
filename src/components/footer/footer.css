@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+  scroll-snap-align: center;
   /* display: grid;
   justify-content: center; */
   /* grid-template-areas:
@@ -73,7 +75,7 @@ li:hover {
     display: none;
   }
 
-  .footer::after {
+  /* .footer::after {
     content: '';
     display: flex;
     position: absolute;
@@ -88,5 +90,5 @@ li:hover {
       rgba(217, 217, 217, 0.25) 0%,
       rgba(115, 115, 115, 0) 100%
     );
-  }
+  } */
 }

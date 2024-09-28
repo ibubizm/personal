@@ -72,6 +72,7 @@
 .burger__menu {
   text-transform: capitalize;
   display: flex;
+  position: sticky;
   flex-direction: column;
   gap: 6rem;
   font-size: 2.85rem;

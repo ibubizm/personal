@@ -47,9 +47,6 @@ export const About = ({ aboutRef }) => {
             and code optimization, resulting in enhanced performance and reduced
             development time.
           </li>
-          {/* <li className="about__list__item">
-            Also sent memes to colleagues during difficult periods in life
-          </li> */}
         </ul>
         <img className="gus" src={gus} alt="" />
       </div>

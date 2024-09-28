@@ -19,31 +19,33 @@ function App() {
   }
 
   return (
-    <section className="App">
+    <div className="App">
       <div className="container">
-        <div className="page">
+        <section className="page">
           <Nav
             projectRef={projectRef}
             aboutRef={aboutRef}
             active={active}
             toggleActive={toggleActive}
           />
-          <BurgerMenu active={active} toggleActive={toggleActive} />
-          <Main homeRef={homeRef} />
-        </div>
-        <div className="page">
-          <About aboutRef={aboutRef} />
-        </div>
-        <div className="page projects__page">
-          <MyProjects myref={projectRef} />
-          <Footer
-            homeRef={homeRef}
+          <BurgerMenu
             projectRef={projectRef}
             aboutRef={aboutRef}
+            homeRef={homeRef}
+            active={active}
+            toggleActive={toggleActive}
           />
-        </div>
+          <Main homeRef={homeRef} />
+        </section>
+        <section className="page">
+          <About aboutRef={aboutRef} />
+        </section>
+        <section className="page projects__page">
+          <MyProjects myref={projectRef} />
+        </section>
+        <Footer homeRef={homeRef} projectRef={projectRef} aboutRef={aboutRef} />
       </div>
-    </section>
+    </div>
   )
 }
 

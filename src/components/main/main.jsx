@@ -6,9 +6,7 @@ export const Main = ({ homeRef }) => {
   return (
     <div ref={homeRef} className="main">
       <div className="main__content">
-        {/* <img src="" alt="" /> */}
         <img className="photo" src={i} alt="" />
-
         <div className="description">
           {/* <div className="sub__title">Web developer</div> */}
           <h1 className="title main__title">Gleb Tkachuk</h1>
@@ -23,7 +21,7 @@ export const Main = ({ homeRef }) => {
             <a
               href="./hleb_tkachuk_cv.pdf"
               type="application/octet-stream"
-              download="hleb_tkachuk_cv.pdf"
+              download="./hleb_tkachuk_cv.pdf"
             >
               resume
             </a>

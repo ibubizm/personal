@@ -12,6 +12,7 @@
 } */
 
 .button {
+  cursor: pointer;
   width: 261px;
   height: 72px;
   /* top: 772px; */
@@ -28,6 +29,7 @@
 
 .button__resume {
   margin-top: 82px;
+  color: #161219;
 }
 
 .button:hover {
