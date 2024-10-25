@@ -4,7 +4,7 @@ export default function useOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false)
 
   const options = {
-    rootMargin: '100px',
+    rootMargin: '0px',
     threshold: 1.0,
   }
 

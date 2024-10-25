@@ -111,7 +111,7 @@ p {
   }
 }
 
-@media (max-height: 667px), screen and (max-width: 400px) {
+@media (max-height: 667px) and (max-width: 400px) {
   .gus {
     height: 250px;
   }
@@ -127,7 +127,7 @@ p {
   }
 }
 
-@media (max-height: 844), screen and (max-width: 400px) {
+@media (max-height: 844) and (max-width: 400px) {
   .gus {
     height: 250px;
   }

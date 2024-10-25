@@ -23,10 +23,10 @@ export const About = ({ aboutRef }) => {
   }, [isVisible])
 
   return (
-    <div ref={aboutRef} className="about">
+    <div className="about">
       <h1 className="title">Experience</h1>
 
-      <div className="about__content">
+      <div ref={aboutRef} className="about__content">
         <ul className={'about__list'}>
           <li className="about__list__item">
             I developed and maintained both frontend and backend components of

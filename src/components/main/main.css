@@ -221,3 +221,10 @@ p {
     margin: 0;
   }
 }
+/* 
+@media (orientation: portrait) {
+  .main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+} */

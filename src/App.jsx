@@ -42,8 +42,12 @@ function App() {
         </section>
         <section className="page projects__page">
           <MyProjects myref={projectRef} />
+          <Footer
+            homeRef={homeRef}
+            projectRef={projectRef}
+            aboutRef={aboutRef}
+          />
         </section>
-        <Footer homeRef={homeRef} projectRef={projectRef} aboutRef={aboutRef} />
       </div>
     </div>
   )
