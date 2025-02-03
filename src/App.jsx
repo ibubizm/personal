@@ -6,6 +6,8 @@ import { Nav } from './components/nav/nav'
 import { About } from './components/about/about'
 import { Footer } from './components/footer/footer'
 import { BurgerMenu } from './components/burger/burger'
+import { MultiMenu } from './components/dropdownTest/multiLevelMenu'
+import { menuItems } from './components/menuItems'
 
 function App() {
   const projectRef = useRef(null)

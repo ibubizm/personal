@@ -1,4 +1,5 @@
 import i from './i2.png'
+import pdf from './HlebTkachuk.pdf'
 import './main.css'
 import { Button } from '../button/button'
 
@@ -19,7 +20,8 @@ export const Main = ({ homeRef }) => {
           </p>
           <Button className={'button__resume'}>
             <a
-              href="./hleb_tkachuk_cv.pdf"
+              href={pdf}
+              target="_blank"
               // type="application/octet-stream"
               download="hleb_tkachuk_cv"
             >

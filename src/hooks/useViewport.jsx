@@ -5,14 +5,13 @@ export default function useOnScreen(ref) {
 
   const options = {
     rootMargin: '0px',
-    threshold: 1.0,
+    threshold: 0.5,
   }
 
   const observer = useMemo(
     () =>
       new IntersectionObserver(([entry]) => {
         setIntersecting(entry.isIntersecting)
-        console.log(entry)
       }, options),
     [ref]
   )
