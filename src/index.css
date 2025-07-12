@@ -31,6 +31,7 @@ a {
 
 html {
   font-size: 14px;
+  background-color: #161219;
 }
 
 @media (max-width: 1440px) {
@@ -43,9 +44,14 @@ html {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 844px), screen and(max-height: 390px) {
+  html {
+    font-size: 9px;
+  }
+}
 @media (max-width: 450px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 @media (max-width: 400px) {
